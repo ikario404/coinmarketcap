@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4 text-center">
+      <h1>BTC</h1>
+      <h2>{{ data['btc']['price_eur'][:-6]  }} €</h2>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h2>eth : {{ data['eth']['price_eur'][:-6]}} €</h2>
+      <p>{{ data['eth']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h2>zec : {{ data['zec']['price_eur'][:-4]}} €</h2>
+      <p>{{ data['zec']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h3>zcl : {{ data['zcl']['price_eur'][:-4]}} €</h3>
+      <p>{{ data['zcl']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h3>xrp : {{ data['xrp']['price_eur']}} €</h3>
+      <p>{{ data['xrp']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h3>music : {{ data['music']['price_eur']}} €</h3>
+      <p>{{ data['music']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 ">
+      <h4>sia : {{ data['sia']['price_eur']}} €</h4>
+      <p>{{ data['sia']['price_btc']}} Ƀ</p>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

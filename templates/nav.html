@@ -1,0 +1,14 @@
+{% block navbar %}
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">CoinMarketCap</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li {%- if request.path == "/search" %} class="active"{% endif %}><a href="/api">Api </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
